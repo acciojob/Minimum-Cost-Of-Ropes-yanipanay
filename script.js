@@ -12,10 +12,10 @@ function calculateMinCost() {
       let sum=0;
   
       function set(arr) {
-        console.log(arr);
+        //console.log(arr);
         arr.sort((a, b) => b - a);
         let s = arr.pop() + arr.pop();
-        console.log(s,arr);
+        //console.log(s,arr);
         sum += s;
         arr.push(s);
       }
@@ -27,5 +27,5 @@ function calculateMinCost() {
 	let res = document.getElementById("result");
       console.log(res);
       const textNode = document.createTextNode(sum);
-        res.appendChild(textNode);
+    res.appendChild(textNode);
 }  
